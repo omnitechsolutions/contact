@@ -1,0 +1,150 @@
+@import url("https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700;800;900&display=swap");
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: "Poppins", sans-serif;
+}
+body {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  min-height: 100vh;
+  background: papayawhip;
+}
+.contact h2 {
+  font-size: 40px;
+  color: black;
+  text-align: center;
+  margin-bottom: 10px;
+}
+.contact form {
+  width: 600px;
+  text-align: center;
+}
+form .input-box {
+  display: flex;
+  justify-content: space-between;
+}
+.input-box .input-field {
+  width: 48.5%;
+}
+.field .item {
+  width: 100%;
+  padding: 18px;
+  background: white;
+  border: 2px solid greenyellow;
+  border-radius: 8px;
+  outline: none;
+  font-size: 16px;
+  color: black;
+  margin: 10px 0;
+}
+.field.error .item {
+  border-color: red;
+}
+.field.error .error-txt {
+  display: block;
+}
+form .textarea-field .item {
+  resize: none;
+}
+form button {
+  padding: 12px 32px;
+  background: #0ef;
+  border: none;
+  outline: none;
+  border-radius: 6px;
+  box-shadow: 0 0 10px #0ef;
+  font-size: 18px;
+  font-weight: bold;
+  color: red;
+  letter-spacing: 1px;
+  cursor: pointer;
+  margin-top: 15px;
+  transition: 0.2s ease;
+}
+form button:hover {
+  box-shadow: none;
+}
+.field .error-txt {
+  font-size: 14px;
+  color: red;
+  text-align: left;
+  margin: -5px 0 10px;
+  display: none;
+}
+form .textarea-field .error-txt {
+  margin-top: -10px;
+}
+@import url("https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700;800;900&display=swap");
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: "Poppins", sans-serif;
+}
+
+body {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  min-height: 80vh;
+  background: papayawhip;
+}
+
+.contact h2 {
+  font-size: 8vw; /* Responsive font size */
+  color: black;
+  text-align: center;
+  margin-bottom: 10px;
+}
+
+.contact form {
+  width: 100%; /* Responsive width */
+  max-width: 600px; /* Maximum width */
+  text-align: center;
+}
+
+form .input-box {
+  display: flex;
+  flex-wrap: wrap; /* Wrap items on smaller screens */
+  justify-content: space-between;
+}
+
+.input-box .input-field {
+  width: 48%; /* Adjust width for smaller screens */
+  margin-bottom: 10px;
+}
+
+.field .item {
+  width: 100%;
+  padding: 1.5em; /* Responsive padding */
+  background: white;
+  border: 2px solid greenyellow;
+  border-radius: 8px;
+  outline: none;
+  font-size: 1.5vw; /* Responsive font size */
+  color: black;
+  margin-bottom: 1em; /* Adjust margin for smaller screens */
+}
+
+form button {
+  padding: 1em 2em; /* Responsive padding */
+  font-size: 1.5vw; /* Responsive font size */
+  margin-top: 2em; /* Adjust margin for smaller screens */
+}
+
+.field .error-txt {
+  font-size: 1vw; /* Responsive font size */
+  margin-top: -0.5em; /* Adjust margin for smaller screens */
+}
+
+/* Media query for smaller screens */
+@media screen and (max-width: 768px) {
+  .input-box .input-field {
+    width: 100%; /* Full width for smaller screens */
+  }
+}
